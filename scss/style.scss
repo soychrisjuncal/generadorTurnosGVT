@@ -27,6 +27,9 @@ $imagenes: (turnos1, turnos2, saludvisual1, saludvisual2, novedades1, novedades2
 	margin: 0;
 	padding: 0;
 
+	
+
+
 body {
 
 	@if $bckColor==azul {
@@ -86,15 +89,6 @@ body {
 
 
 
-.contenedor > div,
-.contenedor .contenedor__header,
-.contenedor .contenedor__contenido,
-.contenedor .contenedor__sidebar,
-.contenedor .contenedor__footer {
-
-
-
-}
 
 
 .contenedor .contenedor__header {
@@ -193,7 +187,7 @@ body {
 }
 }
 
-	.contenedor__header nav a {
+#menus{
 
 margin: 0px 20px 0px 20px;
 color: #192d50;

@@ -1,20 +1,25 @@
 {
-  "name": "fernandezjuncalchristian-generadorturnos",
+  "name": "mi_repositorio",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "dependencies": {
-    "scrollreveal": "^4.0.7"
-  },
-  "devDependencies": {
-    "node-sass": "^5.0.0",
-    "nodemon": "^2.0.6"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soychrisjuncal/mi_repositorio.git"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/soychrisjuncal/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/soychrisjuncal/mi_repositorio#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
 }
