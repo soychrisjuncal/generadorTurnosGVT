@@ -651,6 +651,11 @@
   font-weight: lighter; }
 
 /*CONTACTO*/
+#mensaje {
+  height: 10em;
+  text-decoration-line: none;
+  line-height: 25px; }
+
 .ayudaCon1 {
   width: 100%;
   display: inline-grid;
@@ -684,7 +689,7 @@
   grid-area: contenedor__contenido;
   align-self: flex-end;
   margin-bottom: 0px;
-  margin-top: 200px; }
+  margin-top: 100px; }
 
 .contenido__formContacto h2 {
   font-size: 28px;

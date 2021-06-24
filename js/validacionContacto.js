@@ -5,7 +5,7 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+	
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -13,7 +13,7 @@ const expresiones = {
 }
 
 const campos = {
-	usuario: false,
+	
 	nombre: false,
 
 	correo: false,
@@ -22,9 +22,7 @@ const campos = {
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
-		case "usuario":
-			validarCampo(expresiones.usuario, e.target, 'usuario');
-		break;
+		
 		case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre');
 		break;
@@ -66,24 +64,23 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
-
-	
-	if(campos.usuario && campos.nombre && campos.correo && campos.telefono ){
+	if(campos.nombre && campos.correo && campos.telefono ){
 		formulario.reset();
 		
+		document.getElementById('formulario__mensaje').remove;
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 			formulario.submit();
+		
 		}, 5000);
 
 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario__grupo-correcto');
 
 			document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
-
-
+		
 		});
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
